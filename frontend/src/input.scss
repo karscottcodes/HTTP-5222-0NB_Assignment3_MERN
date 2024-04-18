@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+$header-font-family: "Comfortaa", sans-serif;
+$body-font: "Figtree", sans-serif;
+$custom-color-30opc: rgba(36, 163, 250, 0.3);
+$custom-color: #24a3fa;
+
+$darkgray: #85878a;
+$lightgray: #dee2e6;
+$white: #fff;
+$black: #000;
+
+body {
+	font-family: $body-font;
+	background: #fff;
+	overflow: auto;
+}
+
+.hero {
+	width: 100%;
+	height: 500px;
+	background: url("./assets/background.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.75);
+  color: $white;
+}
+
+h2 {
+	font-family: $header-font-family;
+	color: $custom-color-30opc;
+	font-size: 3em;
+	text-transform: lowercase;
+}
+
+h5 {
+	font-family: $header-font-family;
+	color: $custom-color;
+	font-size: 1.3em;
+}
+
+a.nav-link {
+	font-family: $header-font-family;
+	text-transform: lowercase;
+	color: $white;
+	font-size: 1.2em;
+	transition: color 0.4s ease-in-out;
+
+	&:hover {
+		color: $custom-color;
+		text-decoration: underline;
+	}
+}
+
+nav.nav-custom {
+	background-color: $black;
+	color: $white;
+}
+
+i.bi-footer {
+	font-size: 1.3em;
+}
+
+i.bi-badge {
+	font-size: 4.5em;
+	color: $custom-color;
+}
+
+.accordion-button:is(.collapsed) {
+	background-color: $white;
+}
+
+.accordion-button:not(.collapsed) {
+	color: $custom-color;
+	background-color: $white;
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+		var(--bs-accordion-border-color);
+}
+
+.accordion-button {
+	color: $custom-color;
+	font-size: 0.4em;
+	transition: background-color 0.4s ease-in-out;
+
+	&:hover {
+		background-color: $custom-color-30opc;
+	}
+}
+
+.timeframeSubtitle {
+	color: $darkgray;
+}
+
+.socialList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.socialList a {
+	display: inline-flex;
+	align-items: center;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: $darkgray;
+	transition: color 0.5s ease-in-out;
+
+	&:hover {
+		color: $custom-color;
+	}
+
+	i {
+		font-size: 1.25em;
+		margin-right: 0.5em;
+	}
+}
+
+label.contactLabel {
+	font-family: $header-font-family;
+	font-weight: bold;
+	color: $custom-color;
+	
+}
+
+.btn-custom {
+	font-family: $header-font-family;
+	background-color: $white;
+	border: 1px solid $lightgray;
+	color: $custom-color;
+
+	&:hover{
+		background-color: $custom-color-30opc;
+		color: $custom-color;
+		
+	}
+}
+
+input::placeholder, textarea::placeholder {
+    color: $darkgray !important;
+}
+
+.educationHeader {
+	font-size: 1em;
+}
+
+.educationSubtitle {
+	color: $darkgray;
+}
